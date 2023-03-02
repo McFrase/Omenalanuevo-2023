@@ -4,10 +4,14 @@ body {
   font-family: $mainFont;
   overflow-x: hidden;
   position: relative;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   height: 100%;
   word-wrap: break-word;
 }
+
+// html {
+//   scroll-behavior: smooth;
+// }
 
 nav {
   min-height: 10vh;
@@ -225,17 +229,15 @@ nav {
           height: 24px;
         }
       }
-
     }
 
-    h4 {
-      font-size: 18px;
+    .card-heading {
+      h4 {
+        font-size: 18px;
+        color: #ff6600 !important;
+      }
     }
   }
-
-  // .half-title {
-  //   color: $secondaryColor;
-  // }
 }
 
 // CTA ONE
@@ -448,7 +450,7 @@ nav {
       justify-content: center;
       align-items: center;
       padding: 10px 16px;
-      color: #FFFFFF;
+      color: #ffffff;
       border-radius: 5px;
       border: none;
     }

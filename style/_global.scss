@@ -21,42 +21,44 @@ $darkColor: #121212;
 $lightColor: #fff;
 $secondaryColor: #0099FF;
 $accentColor: #99FF00;
+$lightTextColor: #727171;
+$darkTextColor: #2C2B2B;
 
 // primary color pallette
 $primaryColor-0: #FFF9F5;
-$primaryColor-100: #FDD8C0;
-$primaryColor-200: #F9B88D;
-$primaryColor-300: #F29C62;
-$primaryColor-400: #E98440;
-$primaryColor-500: #DD6F26;
-$primaryColor-600: #CD5E15;
-$primaryColor-700: #B84F09;
-$primaryColor-800: #A04203;
-$primaryColor-900: #873600;
+// $primaryColor-100: #FDD8C0;
+// $primaryColor-200: #F9B88D;
+// $primaryColor-300: #F29C62;
+// $primaryColor-400: #E98440;
+// $primaryColor-500: #DD6F26;
+// $primaryColor-600: #CD5E15;
+// $primaryColor-700: #B84F09;
+// $primaryColor-800: #A04203;
+// $primaryColor-900: #873600;
 
 // secondary color pallette
 $secondaryColor-0: #F5FBFF;
-$secondaryColor-100: #C5E7FD;
-$secondaryColor-200: #98D2F9;
-$secondaryColor-300: #70BEF2;
-$secondaryColor-400: #50ACE9;
-$secondaryColor-500: #389BDD;
-$secondaryColor-600: #278ACD;
-$secondaryColor-700: #1B79B8;
-$secondaryColor-800: #1367A0;
-$secondaryColor-900: #0E5687;
+// $secondaryColor-100: #C5E7FD;
+// $secondaryColor-200: #98D2F9;
+// $secondaryColor-300: #70BEF2;
+// $secondaryColor-400: #50ACE9;
+// $secondaryColor-500: #389BDD;
+// $secondaryColor-600: #278ACD;
+// $secondaryColor-700: #1B79B8;
+// $secondaryColor-800: #1367A0;
+// $secondaryColor-900: #0E5687;
 
 // accent color pallette
 $accentColor-0: #FBFFF5;
-$accentColor-100: #E5FDC0;
-$accentColor-200: #CEF98D;
-$accentColor-300: #B9F262;
-$accentColor-400: #A5E940;
-$accentColor-500: #94DD26;
-$accentColor-600: #83CD15;
-$accentColor-700: #72B809;
-$accentColor-800: #61A003;
-$accentColor-900: #518700;
+// $accentColor-100: #E5FDC0;
+// $accentColor-200: #CEF98D;
+// $accentColor-300: #B9F262;
+// $accentColor-400: #A5E940;
+// $accentColor-500: #94DD26;
+// $accentColor-600: #83CD15;
+// $accentColor-700: #72B809;
+// $accentColor-800: #61A003;
+// $accentColor-900: #518700;
 
 *,
 *::before,
@@ -80,7 +82,7 @@ $accentColor-900: #518700;
 
 .bodyCopy {
   font-size: $bodyCopyDesktop;
-  color: $darkColor;
+  color: $lightTextColor;
   line-height: 1.6;
   font-weight: 300;
 
@@ -91,7 +93,7 @@ $accentColor-900: #518700;
 
 .half-title {
   font-size: $halfTitleDesktop;
-  color: $darkColor;
+  color: $darkTextColor;
   line-height: 1.3;
   font-weight: 500;
 
@@ -141,4 +143,8 @@ $accentColor-900: #518700;
   border: 1px solid $primaryColor;
   padding: 20px 25px;
   border-radius: 8px;
+
+  &:hover {
+    color: $primaryColor;
+  }
 }
