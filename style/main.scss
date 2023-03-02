@@ -1,0 +1,525 @@
+@import '_global.scss';
+
+body {
+  font-family: $mainFont;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #FCFCFC;
+  height: 100%;
+  word-wrap: break-word;
+}
+
+nav {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  background-color: $lightColor;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Logo style
+    .logo {
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .bars {
+        width: 50px;
+        height: 50px;
+        position: relative;
+
+        .bar {
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background: $primaryColor;
+          left: 12.5px;
+
+          &.one {
+            top: 20px;
+          }
+
+          &.two {
+            bottom: 20px;
+          }
+        }
+      }
+
+      // nav-label
+      .nav-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 24px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// Hero section
+#hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .bubblesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: $darkColor;
+    z-index: -1;
+    overflow: hidden;
+
+    .bubble {
+      background-color: $primaryColor;
+      border-radius: 50%;
+      position: absolute;
+
+      &.b-1 {
+        bottom: -8%;
+        left: 8%;
+      }
+
+      &.b-2 {
+        bottom: -16%;
+        left: 16%;
+      }
+
+      &.b-3 {
+        bottom: -22.5%;
+        left: 22.5%;
+      }
+
+      &.b-4 {
+        bottom: -29%;
+        left: 29%;
+      }
+
+      &.b-5 {
+        bottom: -35.5%;
+        left: 35.5%;
+      }
+
+      &.b-6 {
+        bottom: -42%;
+        left: 42%;
+      }
+
+      &.b-7 {
+        bottom: -48.5%;
+        left: 48.5%;
+      }
+
+      &.b-8 {
+        bottom: -55%;
+        left: 55%;
+      }
+
+      &.b-9 {
+        bottom: -61.5%;
+        left: 61.5%;
+      }
+
+      &.b-10 {
+        bottom: -68%;
+        left: 68%;
+      }
+
+      &.b-11 {
+        bottom: -80%;
+        left: 80%;
+      }
+
+      &.b-12 {
+        bottom: -92%;
+        left: 92%;
+        width: 40px !important;
+        height: 40px !important;
+      }
+
+      &:nth-child(odd) {
+        opacity: 0.4;
+        width: 15px;
+        height: 15px;
+      }
+
+      &:nth-child(even) {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+// Clientele
+#clientele {
+  position: relative;
+
+  .move-container-halfway {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 15px 25px rgba(58, 55, 55, 0.02) !important;
+  }
+}
+
+// About Us Home
+#about {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+// Services
+#services {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .custom-card {
+    position: relative;
+    background-color: $lightColor;
+    box-shadow: 0px 15px 25px rgba(73, 69, 69, 0.02);
+    padding: 46px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+
+    .img-scale-off-top {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 34px;
+        height: 34px;
+
+        @media screen and (max-width: 768px) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  // .half-title {
+  //   color: $secondaryColor;
+  // }
+}
+
+// CTA ONE
+.call-to-action-one {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: $primaryColor-0;
+  color: $primaryColor;
+
+  .cta-title {
+    font-size: 70px;
+  }
+
+  .mini-sub-title {
+    color: $secondaryColor-900;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cta-title {
+      font-size: 40px;
+    }
+  }
+}
+
+// Testimonials
+#testimonials {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+
+  .swiper {
+    height: 500px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      width: 300px;
+    }
+
+    .swiper-slide {
+      border-radius: 10px;
+      padding: 28px;
+      min-height: 300px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+
+      &:nth-child(1) {
+        background-color: $secondaryColor-0;
+      }
+
+      &:nth-child(2) {
+        background-color: $primaryColor-0;
+      }
+
+      &:nth-child(3) {
+        background-color: $accentColor-0;
+      }
+    }
+
+    .img-testimonials {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .bodyCopy {
+      font-size: 16px;
+    }
+
+    .user-details {
+      .user-name {
+        font-size: 13px;
+        font-weight: 500;
+        color: $primaryColor;
+      }
+
+      .user-role {
+        font-size: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .testimonial-caption {
+    font-size: 50px;
+    line-height: 1.2;
+
+    @media screen and (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+}
+
+// CTA TWO
+.call-to-action-two {
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+
+  .mini-sub-title {
+    color: $primaryColor;
+  }
+
+  .cta-title {
+    font-size: 36px;
+    font-weight: 300;
+    // color: $primaryColor;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cta-title {
+      font-size: 28px;
+    }
+  }
+}
+
+// Portfolio Home
+#portfolio {
+  .work-img {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .work-details {
+    margin-top: $margin;
+
+    .clientsName {
+      text-transform: capitalize;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .service {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+#contactForm {
+  background: $darkColor;
+
+  .row {
+    min-height: 100vh;
+  }
+
+  .bodyCopy,
+  .title {
+    color: $lightColor;
+  }
+
+  span {
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1.5px;
+        background-color: $primaryColor;
+        transition: 350ms ease-in;
+      }
+
+      &:hover:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#footer {
+  min-height: 65vh;
+  display: grid;
+  place-items: center;
+
+  .container {
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  // Subscription Form
+  .sub-form {
+    position: relative;
+
+    #subscriber {
+      padding: 16px 10px;
+
+      &::placeholder {
+        font-size: 14px;
+        color: #959696;
+      }
+    }
+
+    .omenala-button-subscribe {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 16px;
+      color: #FFFFFF;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+
+  // Help Links
+  .help-links {
+    padding-left: 0;
+    list-style: none;
+
+    .links-within-list {
+      margin: 20px 0;
+
+      @media screen and (max-width: 768px) {
+        margin: 12px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background: $primaryColor;
+  border-radius: 50%;
+  z-index: 20000;
+  user-select: none;
+  pointer-events: none;
+}
+
+.miniCursor {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 10009;
+  user-select: none;
+  pointer-events: none;
+  border: 2px solid $primaryColor;
+}
+
+@media screen and (max-width: 768px) {
+
+  .cursor,
+  .miniCursor {
+    display: none;
+  }
+}
+
+// .bubble {
+//   animation-name: bubbleAnim;
+//   animation-duration: 4500ms;
+//   animation-iteration-count: infinite;
+//   animation-delay: calc(150ms * var(--animation-order));
+// }
+
+// @keyframes bubbleAnim {
+//   0% {
+//   }
+
+//   100% {
+//     bottom: 150%;
+//   }
+// }

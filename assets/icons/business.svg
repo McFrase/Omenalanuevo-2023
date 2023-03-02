@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.298" y1="1.381" x2="1.219" y2="-0.223" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffa509"/>
+      <stop offset="1" stop-color="#ed3237"/>
+    </linearGradient>
+  </defs>
+  <g id="business" transform="translate(-543 -803)">
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="42" height="42" transform="translate(543 803)" fill="none"/>
+    <g id="business-2" data-name="business" transform="translate(543 804)">
+      <path id="Path_99" data-name="Path 99" d="M38.651,22.442A1.274,1.274,0,0,0,37.4,23.689V37.4H2.494V2.494H16.208a1.282,1.282,0,0,0,1.247-1.247A1.31,1.31,0,0,0,16.208,0H2.494A2.493,2.493,0,0,0,0,2.494V37.4A2.493,2.493,0,0,0,2.494,39.9H37.4A2.493,2.493,0,0,0,39.9,37.4V23.67A1.2,1.2,0,0,0,38.651,22.442Z" fill="url(#linear-gradient)"/>
+      <path id="Path_100" data-name="Path 100" d="M36.679,0H24.211a1.247,1.247,0,1,0,0,2.494h9.471L8.354,27.82A1.238,1.238,0,0,0,10.1,29.571L35.432,4.244v9.471a1.247,1.247,0,1,0,2.494,0V1.247h0A1.27,1.27,0,0,0,36.679,0Z" transform="translate(1.972)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
