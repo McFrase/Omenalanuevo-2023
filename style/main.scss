@@ -4,14 +4,9 @@ body {
   font-family: $mainFont;
   overflow-x: hidden;
   position: relative;
-  background-color: #fcfcfc;
-  height: 100%;
+  background-color: #FCFCFC;
   word-wrap: break-word;
 }
-
-// html {
-//   scroll-behavior: smooth;
-// }
 
 nav {
   min-height: 10vh;
@@ -19,8 +14,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  z-index: 1;
+  position: fixed;
+  z-index: 300;
   background-color: $lightColor;
 
   .container {
@@ -40,6 +35,7 @@ nav {
       display: flex;
       align-items: center;
       cursor: pointer;
+      position: relative;
 
       .bars {
         width: 50px;
@@ -48,17 +44,19 @@ nav {
 
         .bar {
           position: absolute;
-          width: 25px;
+          width: 50%;
           height: 2px;
           background: $primaryColor;
-          left: 12.5px;
+          left: 50%;
+          transform: translateX(-50%);
+          transform-origin: center;
 
           &.one {
-            top: 20px;
+            top: 40%;
           }
 
           &.two {
-            bottom: 20px;
+            top: 60%;
           }
         }
       }
@@ -70,6 +68,37 @@ nav {
         align-items: center;
         height: 24px;
         overflow: hidden;
+      }
+
+      .navMenu {
+        position: absolute;
+        bottom: -100%;
+        left: 0%;
+        transform: translate(-25%, 85%);
+        background-color: $primaryColor;
+        box-shadow: 10px 15px 25px rgba(255, 102, 0, 0.3);
+        padding: 40px 30px;
+        place-items: center;
+        border-radius: 8px;
+        display: none;
+        opacity: 0;
+        z-index: 301;
+        width: 20vh;
+        min-height: 20vh;
+
+        .navList {
+          padding-left: 0;
+          list-style: none;
+
+          .navItem {
+            margin: 16px 0;
+
+            .navLink {
+              color: $lightColor;
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
   }
@@ -252,10 +281,6 @@ nav {
     font-size: 70px;
   }
 
-  .mini-sub-title {
-    color: $secondaryColor-900;
-  }
-
   @media screen and (max-width: 768px) {
     .cta-title {
       font-size: 40px;
@@ -384,6 +409,7 @@ nav {
   }
 }
 
+// Contact Form
 #contactForm {
   background: $darkColor;
 
@@ -420,6 +446,29 @@ nav {
   }
 }
 
+// Before Footer
+#before-footer {
+  background-color: $primaryColor-0;
+
+  .half-title {
+    color: $primaryColor;
+  }
+
+  .ask-button {
+    // background-color: $darkColor;
+    color: $darkColor;
+    padding: 20px 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid $darkColor;
+  }
+}
+
+// Footer
 #footer {
   min-height: 65vh;
   display: grid;
@@ -453,6 +502,7 @@ nav {
       color: #ffffff;
       border-radius: 5px;
       border: none;
+      background-color: $primaryColor;
     }
   }
 
@@ -470,8 +520,16 @@ nav {
 
       a {
         text-decoration: none;
+        color: $lightTextColor;
+        font-size: 15px;
+        font-weight: 400;
       }
     }
+  }
+
+  .footer-sub-title {
+    font-size: 20px;
+    color: $primaryColor;
   }
 }
 

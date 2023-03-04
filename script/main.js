@@ -145,3 +145,54 @@ gsap.to('.b-8', {
   delay: 0.5,
   repeat: -1,
 });
+
+// Navigation Bar Script
+const bars = document.querySelector('.bars');
+if (bars) {
+  bars.addEventListener('click', function () {
+    this.classList.toggle('active');
+    if (this.classList.contains('active')) {
+      gsap.to('.bar.one', {
+        rotate: '-45deg',
+        top: '50%',
+        y: '-50%',
+        transformOrigin: 'center',
+      });
+      gsap.to('.bar.two', {
+        rotate: '45deg',
+        top: '50%',
+        y: '-50%',
+        transformOrigin: 'center',
+      });
+      gsap.to('.closed', {
+        marginTop: '-24px',
+      });
+      gsap.to('.navMenu', {
+        bottom: '-85%',
+        y: '85%',
+        display: 'grid',
+        opacity: 1,
+      });
+    } else {
+      gsap.to('.bar.one', {
+        rotate: '0deg',
+        top: '40%',
+        y: '-40%',
+      });
+      gsap.to('.bar.two', {
+        rotate: '0deg',
+        top: '60%',
+        y: '-60%',
+      });
+      gsap.to('.closed', {
+        marginTop: '0',
+      });
+      gsap.to('.navMenu', {
+        bottom: '-100%',
+        y: '100%',
+        display: 'none',
+        opacity: 0,
+      });
+    }
+  });
+}
