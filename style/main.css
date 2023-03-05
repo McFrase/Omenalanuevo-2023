@@ -493,6 +493,12 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   margin-top: 20px;
   border: 1px solid #121212;
 }
+@media screen and (max-width: 768px) {
+  #before-footer .ask-button {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}
 
 #footer {
   min-height: 65vh;
@@ -624,6 +630,11 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
 #about-hero .about-hero-title {
   font-size: 64px;
   color: #2C2B2B;
+}
+@media screen and (max-width: 768px) {
+  #about-hero .about-hero-title {
+    font-size: 35px;
+  }
 }
 #about-hero .about-hero-link .explore-about {
   text-decoration: none;

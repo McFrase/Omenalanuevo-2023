@@ -471,7 +471,6 @@ nav {
   }
 
   .ask-button {
-    // background-color: $darkColor;
     color: $darkColor;
     padding: 20px 35px;
     display: inline-flex;
@@ -481,6 +480,11 @@ nav {
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid $darkColor;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px 25px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -622,6 +626,10 @@ nav {
   .about-hero-title {
     font-size: 64px;
     color: $darkTextColor;
+
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   .about-hero-link {
