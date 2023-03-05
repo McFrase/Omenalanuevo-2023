@@ -104,7 +104,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   z-index: 300;
   background-color: #fff;
 }
@@ -153,7 +153,7 @@ nav .container .nav-container .nav-label {
 nav .container .nav-container .navMenu {
   position: absolute;
   bottom: -100%;
-  left: 0%;
+  left: 25%;
   transform: translate(-25%, 85%);
   background-color: #ff6600;
   box-shadow: 10px 15px 25px rgba(255, 102, 0, 0.3);
@@ -165,6 +165,18 @@ nav .container .nav-container .navMenu {
   z-index: 301;
   width: 20vh;
   min-height: 20vh;
+}
+@media screen and (max-width: 1024px) {
+  nav .container .nav-container .navMenu {
+    left: 100%;
+    transform: translate(-100%, 85%);
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .container .nav-container .navMenu {
+    left: 100%;
+    transform: translate(-100%, 85%);
+  }
 }
 nav .container .nav-container .navMenu .navList {
   padding-left: 0;
@@ -192,7 +204,7 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   width: 100%;
   height: 100%;
   z-index: -1;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #hero .bubblesContainer .bubble {
   background-color: #ff6600;
@@ -340,10 +352,17 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
 #testimonials .swiper {
   height: 500px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   #testimonials .swiper {
-    width: 300px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #testimonials .swiper {
+    width: 270px;
   }
 }
 #testimonials .swiper .swiper-slide {
@@ -569,4 +588,161 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   .miniCursor {
     display: none;
   }
+}
+#about-hero {
+  min-height: 45vh;
+}
+#about-hero .hero-intro {
+  width: 100%;
+  height: 60vh;
+  background: url("../assets/about-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 2rem;
+  border-radius: 8px;
+  display: grid;
+  place-items: end center;
+}
+#about-hero .hero-intro .glassmorphism-box {
+  background: linear-gradient(91.29deg, rgba(60, 60, 60, 0.4) 0%, rgba(39, 39, 39, 0.5) 100%);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 8px;
+  padding: 1.2rem;
+  width: 100%;
+}
+#about-hero .hero-intro .glassmorphism-box .glass-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0;
+}
+#about-hero .about-hero-title {
+  font-size: 64px;
+  color: #2C2B2B;
+}
+#about-hero .about-hero-link .explore-about {
+  text-decoration: none;
+  color: #2C2B2B;
+}
+
+#about-after {
+  min-height: 45vh;
+  display: grid;
+  place-items: center;
+}
+
+#vam {
+  min-height: 100vh;
+  background-color: #FFF9F5;
+  display: grid;
+  place-items: center;
+}
+#vam .number {
+  font-size: 16px;
+}
+#vam .vam-title {
+  font-size: 16px;
+  color: #ff6600;
+}
+#vam .phone {
+  position: relative;
+  width: 360px;
+  height: 700px;
+}
+#vam .phone .phone-case {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+#vam .phone video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 95%;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#values {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+#values .swiper {
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  #values .swiper {
+    width: 300px;
+  }
+}
+#values .swiper .swiper-slide {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  border-radius: 10px;
+  height: 90%;
+}
+#values .swiper .swiper-slide#swiper-child-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide#swiper-child-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide#swiper-child-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide#swiper-child-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide#swiper-child-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide#swiper-child-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value 6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#values .swiper .swiper-slide .swiper-title {
+  font-size: 18px;
+}
+#values .swiper .swiper-slide .swiper-number-title {
+  font-size: 13px;
+}
+#values .swiper .swiper-slide .bodyCopy {
+  color: #fff;
+}
+#values .swiper .swiper-pagination-bullet-active {
+  background-color: #ff6600;
 }/*# sourceMappingURL=main.css.map */

@@ -14,7 +14,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   z-index: 300;
   background-color: $lightColor;
 
@@ -73,7 +73,7 @@ nav {
       .navMenu {
         position: absolute;
         bottom: -100%;
-        left: 0%;
+        left: 25%;
         transform: translate(-25%, 85%);
         background-color: $primaryColor;
         box-shadow: 10px 15px 25px rgba(255, 102, 0, 0.3);
@@ -85,6 +85,16 @@ nav {
         z-index: 301;
         width: 20vh;
         min-height: 20vh;
+
+        @media screen and (max-width:1024px) {
+          left: 100%;
+          transform: translate(-100%, 85%);
+        }
+
+        @media screen and (max-width:768px) {
+          left: 100%;
+          transform: translate(-100%, 85%);
+        }
 
         .navList {
           padding-left: 0;
@@ -120,7 +130,7 @@ nav {
     height: 100%;
     // background-color: $darkColor;
     z-index: -1;
-    overflow: hidden;
+    overflow-x: hidden;
 
     .bubble {
       background-color: $primaryColor;
@@ -297,9 +307,15 @@ nav {
   .swiper {
     height: 500px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
-      width: 300px;
+      width: 350px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 270px;
     }
 
     .swiper-slide {
@@ -568,18 +584,187 @@ nav {
   }
 }
 
-// .bubble {
-//   animation-name: bubbleAnim;
-//   animation-duration: 4500ms;
-//   animation-iteration-count: infinite;
-//   animation-delay: calc(150ms * var(--animation-order));
-// }
+// About Us Page
+#about-hero {
+  min-height: 45vh;
 
-// @keyframes bubbleAnim {
-//   0% {
-//   }
+  .hero-intro {
+    width: 100%;
+    height: 60vh;
+    background: url('../assets/about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2rem;
+    border-radius: 8px;
+    display: grid;
+    place-items: end center;
 
-//   100% {
-//     bottom: 150%;
-//   }
-// }
+    .glassmorphism-box {
+      background: linear-gradient(91.29deg, rgba(60, 60, 60, 0.4) 0%, rgba(39, 39, 39, 0.5) 100%);
+      backdrop-filter: blur(7px);
+      border-radius: 8px;
+      padding: 1.2rem;
+      width: 100%;
+
+      .glass-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
+        color: $lightColor;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-hero-title {
+    font-size: 64px;
+    color: $darkTextColor;
+  }
+
+  .about-hero-link {
+
+    .explore-about {
+      text-decoration: none;
+      color: $darkTextColor;
+    }
+  }
+}
+
+// About After
+#about-after {
+  min-height: 45vh;
+  display: grid;
+  place-items: center;
+}
+
+// Vision & Mission
+#vam {
+  min-height: 100vh;
+  background-color: $primaryColor-0;
+  display: grid;
+  place-items: center;
+
+  .number {
+    font-size: 16px;
+    // color: $primaryColor;
+  }
+
+  .vam-title {
+    font-size: 16px;
+    color: $primaryColor;
+  }
+
+  .phone {
+    position: relative;
+    width: 360px;
+    height: 700px;
+
+    .phone-case {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 95%;
+      border-radius: 10px;
+      z-index: 10;
+    }
+  }
+}
+
+#values {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  .swiper {
+    height: 550px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width:500px) {
+      width: 300px;
+    }
+
+    .swiper-slide {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: $lightColor;
+      border-radius: 10px;
+      height: 90%;
+
+      &#swiper-child-1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &#swiper-child-2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &#swiper-child-3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &#swiper-child-4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 4.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &#swiper-child-5 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 5.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &#swiper-child-6 {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/Value\ 6.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .swiper-title {
+        font-size: 18px;
+      }
+
+      .swiper-number-title {
+        font-size: 13px;
+      }
+
+      .bodyCopy {
+        color: $lightColor;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $primaryColor;
+    }
+  }
+}

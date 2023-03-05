@@ -2,40 +2,256 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omenalanueva: New Site</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/boostrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/boostrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style/main.css" />
 </head>
 
 <body>
-
+    <!-- Navigation Bar -->
     <nav>
         <div class="container">
+            <!-- Logo -->
             <div class="logo">
-                <img src="./assets/Omenala_Logo.png" alt="" srcset="">
+                <a href="/">
+                    <img src="./assets/Omenala_Logo.png" alt="" srcset="" />
+                </a>
             </div>
+            <!-- NavContainer -->
             <div class="nav-container">
+                <!-- Bars for Hamburger -->
                 <div class="bars">
                     <span class="bar one"></span>
                     <span class="bar two"></span>
                 </div>
+                <!-- Nav Label -->
                 <div class="nav-label">
                     <span class="closed">Menu</span>
                     <span class="open">Close</span>
+                </div>
+                <!-- Nav Menu -->
+                <div class="navMenu">
+                    <ul class="navList">
+                        <li class="navItem"><a href="/" class="navLink">Home</a></li>
+                        <li class="navItem">
+                            <a href="/about.html" class="navLink">About</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="/portfolio.html" class="navLink">Works</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="/contact.html" class="navLink">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
 
     <div class="smooth-scroll">
+        <!-- About Hero -->
+        <div id="about-hero" class="py-5">
+            <div class="container">
+                <div class="row justify-content-lg-between justify-content-center">
+                    <!-- Hero Video Link-->
+                    <div class="col-lg-6 col-xl-6 col-11 my-3 my-lg-0">
+                        <div class="about-hero-link">
+                            <h1 class="about-hero-title">
+                                Creating happiness,
+                                <span class="highlight-text">just for you</span>
+                            </h1>
+                            <p class="bodyCopy">
+                                A young budding and award winning exhibition, branding and
+                                logistics company in Nigerian, located in Lagos State, which
+                                exists because of her passion for exhibition and corporate
+                                branding. Here, we see and believe in new ways of visualizing
+                                and birthing new ideas of conceptualization and service
+                                delivery and we are driven by passion to make a significant
+                                difference, taking events from concepts to production.
+                            </p>
+                            <a href="" class="explore-about">Explore More</a>
+                        </div>
+                    </div>
+                    <!-- Hero Intro -->
+                    <div class="col-lg-5 col-xl-4 col-11 my-3 my-lg-0">
+                        <div class="hero-intro">
+                            <div class="glassmorphism-box">
+                                <h4 class="glass-text">Ask, we deliver</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div id="about"></div>
+        <!-- About After -->
+        <div id="about-after" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-11 text-center">
+                        <h4 class="half-title">
+                            "Our mandate is to provide strategic sustainable service
+                            delivery across the value- chain of Brand and Event Activation,
+                            Exhibitions, Corporate Branding, Logistics and Warehousing."
+                        </h4>
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-md-4 col-7">
+                                <img src="/assets/CEO Signature.png" alt="CEO Signature" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision & Mission Statement -->
+        <section id="vam" class="py-5">
+            <div class="container">
+                <div class="row justify-content-lg-between justify-content-center">
+                    <div class="col-lg-6 col-xl-6 col-11">
+                        <h4 class="half-title">
+                            Skilled at delivering
+                            <span class="highlight-text">dynamic branding solution</span>
+                            for various industries
+                        </h4>
+                        <p class="bodyCopy mb-4">
+                            We believe that experience is everything – what we do at Omenala
+                            Nuevo is create an unforgettable experience with your brand for
+                            your target audience, thereby ensuring client’s brand expansion,
+                            and a more positive impact. Omenala Nuevo’s comprehensive range
+                            of services includes exhibit design and production, the design,
+                            planning and management of events, rentals, installation and
+                            dismantle services, coupled with a wide range of exhibition
+                            solutions as well as the full spectrum of branding solutions.
+                        </p>
+                        <!-- Vision -->
+                        <div class="row my-3">
+                            <div class="col-2 col-lg-1">
+                                <h5 class="number">01</h5>
+                            </div>
+                            <div class="col-10 col-lg-11">
+                                <h5 class="vam-title">Vision</h5>
+                                <p class="bodyCopy">
+                                    To be the one stop exhibition company that provides
+                                    strategic sustainable service delivery for brands across the
+                                    various value chain in the exhibition world in Africa.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Mission -->
+                        <div class="row my-3">
+                            <div class="col-2 col-lg-1">
+                                <h5 class="number">02</h5>
+                            </div>
+                            <div class="col-10 col-lg-11">
+                                <h5 class="vam-title">Mission</h5>
+                                <p class="bodyCopy">
+                                    To function through cutting edge passion, new ideas, as well
+                                    as tested and proven technological innovations to provide
+                                    solutions to brands.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Phone Container -->
+                    <div class="col-lg-6 col-xl-5 col-11 d-flex justify-content-lg-end justify-content-center">
+                        <div class="phone">
+                            <img src="/assets/phone@2x.png" alt="" class="phone-case">
+                            <video src="assets/video/VID_20220423_063614.mp4" type="video/mp4" autoplay="" loop=""
+                                muted=""></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section id="values" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center my-3">
+                    <div class="col-lg-7 text-center">
+                        <h4 class="half-title">Core Values</h4>
+                        <p class="bodyCopy">We at Omenala Nuevo are committed in playing a key role in the exhibition
+                            sector till our role in enabling brands to
+                            thrive is widely recognized.</p>
+                    </div>
+                </div>
+                <!-- Core Sliders -->
+                <div class="row justify-content-center my-3">
+                    <div class="col-11 col-lg-12">
+                        <div class="swiper">
+                            <!-- Swiper Wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- 01 -->
+                                <div class="swiper-slide" id="swiper-child-1">
+                                    <h3 class="swiper-number-title">01</h3>
+                                    <h3 class="swiper-title">Our Relationships</h3>
+                                    <p class="bodyCopy">Building Relationships:
+                                        At Omenala Nuevo, we value relationships with both our vendors and clients. We
+                                        work with the best local talents in every
+                                        category to meet your branding needs. You can trust that you're receiving the
+                                        best of the best when you work with us.</p>
+                                </div>
+                                <!-- 02 -->
+                                <div class="swiper-slide" id="swiper-child-2">
+                                    <h3 class="swiper-number-title">02</h3>
+                                    <h3 class="swiper-title">Our Convenience</h3>
+                                    <p class="bodyCopy">Convenience is Our Priority:
+                                        At Omenala Nuevo, we handle everything from concept to production to clean-up,
+                                        so you can relax and focus on other
+                                        things. Our priority is your convenience, and that's why you chose us. As our
+                                        slogan says, "Ask, We Deliver."</p>
+                                </div>
+                                <!-- 03 -->
+                                <div class="swiper-slide" id="swiper-child-3">
+                                    <h3 class="swiper-number-title">03</h3>
+                                    <h3 class="swiper-title">Our Communication</h3>
+                                    <p class="bodyCopy">We work as a team to achieve your project goals, with a
+                                        dedicated Event Manager keeping you informed every step of the
+                                        way. We take the time to understand your brand and project objectives, ensuring
+                                        that the final result meets your
+                                        expectations.</p>
+                                </div>
+                                <!-- 04 -->
+                                <div class="swiper-slide" id="swiper-child-4">
+                                    <h3 class="swiper-number-title">04</h3>
+                                    <h3 class="swiper-title">Our Professionalism</h3>
+                                    <p class="bodyCopy">We take your brand seriously and our team is highly skilled,
+                                        trained, and experienced in delivering top-notch services
+                                        with professionalism. We prioritize quality work and it's ingrained in our DNA.
+                                    </p>
+                                </div>
+                                <!-- 05 -->
+                                <div class="swiper-slide" id="swiper-child-5">
+                                    <h3 class="swiper-number-title">05</h3>
+                                    <h3 class="swiper-title">Our Technology</h3>
+                                    <p class="bodyCopy">Our name, Omenala Nuevo, means New Tradition. We are dedicated
+                                        to finding innovative ways to achieve success and make
+                                        use of the latest technology to provide unforgettable brand experiences in this
+                                        modern era.</p>
+                                </div>
+                                <!-- 06 -->
+                                <div class="swiper-slide" id="swiper-child-6">
+                                    <h3 class="swiper-number-title">06</h3>
+                                    <h3 class="swiper-title">Our Pricng</h3>
+                                    <p class="bodyCopy">We offer great services at very competitive prices, which are
+                                        unmatched elsewhere. Our ability to do so is our secret,
+                                        but rest assured, you get the best for less.</p>
+                                </div>
+                            </div>
+                            <!-- Swiper Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Before Footer -->
         <section id="before-footer" class="py-5">
@@ -49,7 +265,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Footer -->
         <footer class="py-5" id="footer">
             <div class="container">
@@ -59,15 +274,15 @@
                         <!-- <img src="assets/Omenala_Logo.png" alt="" class="img-fluid mb-3"> -->
                         <h4 class="footer-sub-title mb-2">Get our updates!</h4>
                         <p class="bodyCopy mb-4">
-                            Stay up to date with the latest news, and information concerning the
-                            orphanage
+                            Stay up to date with the latest news, and information concerning
+                            the orphanage
                         </p>
                         <!-- Email Subscription Form -->
                         <form>
                             <div class="mb-3 sub-form">
                                 <!-- Input -->
                                 <input type="email" class="form-control" id="subscriber"
-                                    placeholder="Enter email address">
+                                    placeholder="Enter email address" />
                                 <button class="omenala-button-subscribe">Subscribe</button>
                             </div>
                         </form>
@@ -76,50 +291,64 @@
                     <div class="col-md-5 col-lg-3 col-5 mt-5">
                         <h4 class="footer-sub-title mb-3">Quick Links</h4>
                         <ul class="help-links">
-                            <li class="links-within-list"><a href="./about.html">About Us</a></li>
-                            <li class="links-within-list"><a href="./contact.html">Contact</a></li>
-                            <li class="links-within-list"><a href="./portfolio.html">Works</a></li>
+                            <li class="links-within-list">
+                                <a href="./about.html">About Us</a>
+                            </li>
+                            <li class="links-within-list">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                            <li class="links-within-list">
+                                <a href="./portfolio.html">Works</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- Footer Three -->
                     <div class="col-md-5 col-lg-3 col-5 mt-5">
                         <h4 class="footer-sub-title mb-3">Contact Us</h4>
                         <ul class="help-links">
-                            <li class="links-within-list"><a
-                                    href="mailto:hello@omenalanuevo.com">hello@omenalanuevo.com</a>
+                            <li class="links-within-list">
+                                <a href="mailto:hello@omenalanuevo.com">hello@omenalanuevo.com</a>
                             </li>
                             <!-- Instagram -->
-                            <li class="links-within-list"><a href="">
+                            <li class="links-within-list">
+                                <a href="">
                                     <span class="d-flex align-items-center">
                                         <span class="text">Instagram</span>
                                         <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                                height="auto"></span>
+                                                height="auto" /></span>
                                     </span>
-                                </a></li>
+                                </a>
+                            </li>
                             <!-- Twitter -->
-                            <li class="links-within-list"><a href="">
+                            <li class="links-within-list">
+                                <a href="">
                                     <span class="d-flex align-items-center">
                                         <span class="text">Twitter</span>
                                         <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                                height="auto"></span>
+                                                height="auto" /></span>
                                     </span>
-                                </a></li>
+                                </a>
+                            </li>
                             <!-- Facebook -->
-                            <li class="links-within-list"><a href="">
+                            <li class="links-within-list">
+                                <a href="">
                                     <span class="d-flex align-items-center">
                                         <span class="text">Facebook</span>
                                         <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                                height="auto"></span>
+                                                height="auto" /></span>
                                     </span>
-                                </a></li>
+                                </a>
+                            </li>
                             <!-- LinkedIn -->
-                            <li class="links-within-list"><a href="">
+                            <li class="links-within-list">
+                                <a href="">
                                     <span class="d-flex align-items-center">
                                         <span class="text">LinkedIn</span>
                                         <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                                height="auto"></span>
+                                                height="auto" /></span>
                                     </span>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -134,7 +363,6 @@
     <!-- Cursor Design -->
     <div class="cursor"></div>
     <div class="miniCursor"></div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
         integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
@@ -151,6 +379,34 @@
     <script src="/boostrap/bootstrap.min.js"></script>
 
     <script src="/script/main.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // effect: 'cards',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                425: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            }
+        });
+    </script>
 </body>
 
 </html>
