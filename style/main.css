@@ -423,7 +423,6 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
 }
 .call-to-action-two .cta-title {
   font-size: 36px;
-  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .call-to-action-two .cta-title {
