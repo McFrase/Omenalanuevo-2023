@@ -447,35 +447,6 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   font-weight: 300;
 }
 
-#contactForm {
-  background: #121212;
-}
-#contactForm .row {
-  min-height: 100vh;
-}
-#contactForm .bodyCopy,
-#contactForm .title {
-  color: #fff;
-}
-#contactForm span a {
-  color: #ff6600;
-  text-decoration: none;
-  position: relative;
-}
-#contactForm span a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 1.5px;
-  background-color: #ff6600;
-  transition: 350ms ease-in;
-}
-#contactForm span a:hover:before {
-  width: 100%;
-}
-
 #before-footer {
   background-color: #FFF9F5;
 }
@@ -756,4 +727,118 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
 }
 #values .swiper .swiper-pagination-bullet-active {
   background-color: #ff6600;
+}
+
+#contact-hero {
+  min-height: 95vh;
+  display: grid;
+  place-items: center;
+}
+#contact-hero .inline-link {
+  color: #ff6600;
+  font-weight: 500;
+  text-decoration: none;
+}
+#contact-hero .contact-hero-title {
+  font-size: 64px;
+  color: #2C2B2B;
+}
+@media screen and (max-width: 768px) {
+  #contact-hero .contact-hero-title {
+    font-size: 35px;
+  }
+}
+
+form label {
+  font-size: 14px;
+  color: #2C2B2B;
+}
+@media screen and (max-width: 500px) {
+  form label.form-check-label {
+    font-size: 12px;
+  }
+}
+form input.input-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+}
+form input::-moz-placeholder {
+  font-size: 14px;
+  color: #9E9D9D;
+}
+form input::placeholder {
+  font-size: 14px;
+  color: #9E9D9D;
+}
+form select.input-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  font-size: 14px;
+}
+form .iti {
+  display: flex;
+}
+form textarea {
+  resize: none;
+}
+form .agree-link {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 500;
+}
+form button {
+  border: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 26px;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 8px;
+}
+@media screen and (width: 1366px) {
+  form button {
+    padding: 13px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  form button {
+    display: flex;
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+.contact-map .overlay {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-map .directions-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 26px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #0099FF;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.contact-map .directions-button:hover {
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
