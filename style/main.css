@@ -282,6 +282,27 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   transform: translate(-50%, -50%);
   box-shadow: 0px 15px 25px rgba(58, 55, 55, 0.02) !important;
 }
+#clientele .swiper {
+  height: 100px;
+  width: 100%;
+}
+#clientele .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#clientele .swiper .swiper-slide .client-box-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#clientele .swiper .swiper-slide .client-box-img img {
+  width: 140px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 #about {
   min-height: 100vh;
@@ -841,4 +862,46 @@ form button {
 }
 .contact-map .directions-button:hover {
   color: #FFFFFF;
+}
+
+#portfolio-grid .portfolio-grid-link {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 50vh;
+  transition: all 0.3s ease-in-out;
+  background-position: center !important;
+  background-size: 100% !important;
+}
+#portfolio-grid .portfolio-grid-link:hover {
+  background-size: 110% !important;
+}
+#portfolio-grid .portfolio-grid-link .project-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+#portfolio-grid .portfolio-grid-link#mc {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/works/MC-2.jpg");
+}
+
+.portfolio-hero {
+  min-height: 85vh;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.portfolio-hero#mc {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/MC-Bg.jpg");
+}
+
+#portfolio-details {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+}
+#portfolio-details .project-title {
+  font-size: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

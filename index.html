@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omenalanueva: New Site</title>
+    <title>Omenalanuevo</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -83,17 +83,42 @@
         </section>
 
         <!-- Clientele -->
-        <section id="clientele" class="py-5">
+        <section id="clientele">
             <div class="container move-container-halfway bg-white px-3 py-4">
-                <div class="row justify-content-around align-items-center">
-                    <div class="col-2">
-                        <img src="./assets/clientele/crm-logo.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-2">
-                        <img src="./assets/clientele/FieldInsight-logo.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-2">
-                        <img src="./assets/clientele/paga-logo.png" alt="" class="img-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="swiper" id="swiper-clientele">
+                        <div class="swiper-wrapper">
+                            <!-- 1 -->
+                            <div class="swiper-slide">
+                                <div class="client-box-img">
+                                    <img src="/assets/clientele/client-bol.png" alt="">
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="swiper-slide">
+                                <div class="client-box-img">
+                                    <img src="/assets/clientele/client-field-insight.png" alt="">
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="swiper-slide">
+                                <div class="client-box-img">
+                                    <img src="/assets/clientele/client-lasaa.png" alt="">
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="swiper-slide">
+                                <div class="client-box-img">
+                                    <img src="/assets/clientele/client-lawma.png" alt="">
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="swiper-slide">
+                                <div class="client-box-img">
+                                    <img src="/assets/clientele/cliente-comic-republic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,7 +319,7 @@
                     </div>
                     <!-- Testimonial Slide -->
                     <div class="col-lg-4 col-xl-3 col-11 d-flex justify-content-center">
-                        <div class="swiper my-4">
+                        <div class="swiper my-4" id="swiper-testimonial">
                             <div class="swiper-wrapper">
                                 <!-- Testimonial One -->
                                 <div class="swiper-slide">
@@ -512,9 +537,24 @@
 
     <script src="/script/main.js"></script>
 
+    <!-- Swiper Testiomonials -->
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('#swiper-testimonial', {
             effect: 'cards',
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
+
+    <!-- Swiper Clientele -->
+    <script>
+        const swiperNew = new Swiper('#swiper-clientele', {
+            slidesPerView: 4,
+            // spaceBetween: 10,
+            // centeredSlides: true,
+            // lazyLoading: true,
+            loop: true,
             autoplay: {
                 delay: 5000,
             },
