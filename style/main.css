@@ -883,7 +883,13 @@ form button {
   color: #fff;
 }
 #portfolio-grid .portfolio-grid-link#mc {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/works/MC-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/works/MC-2.jpg");
+}
+#portfolio-grid .portfolio-grid-link#yt {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/YT-4.jpg");
+}
+#portfolio-grid .portfolio-grid-link#stb {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/STB-4.jpg");
 }
 
 .portfolio-hero {
@@ -894,6 +900,12 @@ form button {
 }
 .portfolio-hero#mc {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/MC-Bg.jpg");
+}
+.portfolio-hero#yt {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/YT-4.jpg");
+}
+.portfolio-hero#stb {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/STB-1.jpg");
 }
 
 #portfolio-details {
