@@ -303,6 +303,11 @@ nav .container .nav-container .navMenu .navList .navItem .navLink {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 500px) {
+  #clientele .swiper .swiper-slide .client-box-img img {
+    width: 80px;
+  }
+}
 
 #about {
   min-height: 100vh;
@@ -870,9 +875,17 @@ form button {
   align-items: flex-end;
   justify-content: center;
   min-height: 50vh;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
   background-position: center !important;
   background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  #portfolio-grid .portfolio-grid-link {
+    min-height: 30vh;
+  }
 }
 #portfolio-grid .portfolio-grid-link:hover {
   background-size: 110% !important;
@@ -882,14 +895,23 @@ form button {
   font-weight: 400;
   color: #fff;
 }
+#portfolio-grid .portfolio-grid-link#bat {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/works/BAT-2.jpg");
+}
 #portfolio-grid .portfolio-grid-link#mc {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/works/MC-2.jpg");
 }
 #portfolio-grid .portfolio-grid-link#yt {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/YT-4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/YT-1.jpg");
 }
 #portfolio-grid .portfolio-grid-link#stb {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/STB-4.jpg");
+}
+#portfolio-grid .portfolio-grid-link#aopn {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/AOPN-1.jpg");
+}
+#portfolio-grid .portfolio-grid-link#bizcon {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/BIZCON-3.jpg");
 }
 
 .portfolio-hero {
@@ -897,6 +919,9 @@ form button {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
+}
+.portfolio-hero#bat {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/BAT-Bg.jpg");
 }
 .portfolio-hero#mc {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/MC-Bg.jpg");
@@ -906,6 +931,12 @@ form button {
 }
 .portfolio-hero#stb {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/STB-1.jpg");
+}
+.portfolio-hero#aopn {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/aopn-1.jpg");
+}
+.portfolio-hero#bizcon {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/works/BIZCON-3.jpg");
 }
 
 #portfolio-details {

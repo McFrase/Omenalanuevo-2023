@@ -246,6 +246,10 @@ nav {
           width: 140px;
           height: 100%;
           object-fit: cover;
+
+          @media screen and (max-width: 500px) {
+            width: 80px;
+          }
         }
       }
     }
@@ -903,9 +907,16 @@ form {
     align-items: flex-end;
     justify-content: center;
     min-height: 50vh;
-    transition: all .3s ease-in-out;
+    transition: all .8s ease-in-out;
     background-position: center !important;
     background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      min-height: 30vh;
+    }
 
     &:hover {
       background-size: 110% !important;
@@ -917,16 +928,28 @@ form {
       color: $lightColor;
     }
 
+    &#bat {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/works/BAT-2.jpg');
+    }
+
     &#mc {
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/works/MC-2.jpg');
     }
 
     &#yt {
-      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/YT-4.jpg');
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/YT-1.jpg');
     }
 
     &#stb {
       background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/STB-4.jpg');
+    }
+
+    &#aopn {
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/AOPN-1.jpg');
+    }
+
+    &#bizcon {
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/BIZCON-3.jpg');
     }
 
   }
@@ -940,6 +963,11 @@ form {
   background-size: cover !important;
 
 
+  &#bat {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../assets/works/BAT-Bg.jpg');
+  }
+
   &#mc {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../assets/works/MC-Bg.jpg');
@@ -951,6 +979,14 @@ form {
 
   &#stb {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/STB-1.jpg');
+  }
+
+  &#aopn {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/aopn-1.jpg');
+  }
+
+  &#bizcon {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/works/BIZCON-3.jpg');
   }
 }
 

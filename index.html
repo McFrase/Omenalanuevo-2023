@@ -84,7 +84,7 @@
 
         <!-- Clientele -->
         <section id="clientele">
-            <div class="container move-container-halfway bg-white px-3 py-4">
+            <div class="container move-container-halfway bg-white px-3 py-2 py-lg-4">
                 <div class="row align-items-center justify-content-center">
                     <div class="swiper" id="swiper-clientele">
                         <div class="swiper-wrapper">
@@ -145,53 +145,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 mx-auto my-4">
-                        <div class="work-img">
-                            <img src="./assets/works/boi.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="work-details">
-                            <h4 class="clientsName">Bank of industry</h4>
-                            <h6 class="service">Event booth</h6>
-                        </div>
-                    </div>
-                    End of BOI
-                    <div class="col-md-5 mx-auto my-4">
-                        <div class="work-img">
-                            <img src="./assets/works/cocacola.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="work-details">
-                            <h4 class="clientsName">Coca-Cola</h4>
-                            <h6 class="service">Product stand, &amp; stand</h6>
-                        </div>
-                    </div>
-                    End of  Coca-Cola
-                    <div class="col-md-5 mx-auto my-4">
-                        <div class="work-img">
-                            <img src="./assets/works/youtube.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="work-details">
-                            <h4 class="clientsName">YouTube</h4>
-                            <h6 class="service">Outdoor Stand</h6>
-                        </div>
-                    </div>
-                    End of YouTube
-                    <div class="col-md-5 mx-auto my-4">
-                        <div class="work-img">
-                            <img src="./assets/works/beekays.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="work-details">
-                            <h4 class="clientsName">Beekay's Place</h4>
-                            <h6 class="service">Indoor & Outdoor Event Setting</h6>
-                        </div>
-                    </div>
-                    End of Beekay's Place
-                </div>
-            </div>
-        </section> -->
 
         <!-- Services -->
         <section id="services" class="py-5">
@@ -551,9 +504,17 @@
     <script>
         const swiperNew = new Swiper('#swiper-clientele', {
             slidesPerView: 4,
-            // spaceBetween: 10,
-            // centeredSlides: true,
-            // lazyLoading: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                }
+            },
             loop: true,
             autoplay: {
                 delay: 5000,
